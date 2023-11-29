@@ -1,0 +1,478 @@
+@font-face {
+    font-family: "Haval";
+    src:
+        url("/fonts/Haval-300.woff2") format("woff2"),
+}
+
+body {
+    font-family: "Haval";
+}
+
+.header {
+    background-color: black;
+}
+
+.header__body {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.header__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 14px 0;
+}
+
+.header__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.strip {
+    width: 1px;
+    height: 22px;
+    background-color: #FFFFFF;
+    margin: 0 16px;
+}
+
+.header__logo2 {
+    width: 112px;
+    height: 48px;
+}
+
+.header__block {
+    display: flex;
+    align-items: center;
+}
+
+.header__phone-icon {
+    width: 21px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.header__phone-text {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: left;
+    color: #fff;
+}
+
+.header__address-icon {
+    width: 17px;
+    height: 28px;
+    margin-right: 10px;
+}
+
+.header__block-text {
+    display: grid;
+    align-items: center;
+}
+
+.header__address {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    color: #fff;
+}
+
+.header__address-hours {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #fff;
+}
+
+.menu {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__links {
+    display: flex;
+    justify-content: left;
+    align-self: center;
+}
+
+.menu__links:first-child {
+    margin-right: 53px;
+}
+
+.menu__link {
+    margin-right: 13px;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 12px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.menu__links:last-child .menu__link {
+    margin-right: 0;
+}
+
+
+.main {}
+
+.main__header {
+    background-image: url(../assets/main/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 63px;
+    height: 756px;
+}
+
+.main__title {
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 55px;
+    margin: 17px 0 10px;
+}
+
+.main__text {
+    color: #00CABF;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.main__button {
+    display: flex;
+    width: 374px;
+    height: 60px;
+    padding: 21px 23px 20px 22px;
+    justify-content: center;
+    align-items: center;
+    background: #00CABF;
+    margin: auto;
+    border: none;
+    font-family: "Haval";
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    top: 64px;
+    cursor: pointer;
+}
+
+.main__timer-block {
+    margin: 0 auto;
+    background: #F3F3F3;
+}
+
+.main__timer-body {
+    max-width: 1151px;
+    margin: 0 auto;
+    padding: 35px 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pie {
+    display: inline-block;
+    margin: .5em;
+    width: 8em;
+    height: 8em;
+    position: relative;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.pie:after {
+    border-radius: 50%;
+    display: block;
+    content: "";
+    background: #fff;
+    position: absolute;
+    left: .5em;
+    top: .5em;
+    height: 7em;
+    width: 7em;
+}
+
+.p1 {
+    background-image: linear-gradient(90deg, #5cdbd3 50%, #5cdbd3 50%);
+}
+
+.p2 {
+    background-image: linear-gradient(150deg, transparent 50%, #5cdbd3 50%),
+        linear-gradient(90deg, #ddd 50%, #5cdbd3 50%);
+}
+
+.p3 {
+    background-image: linear-gradient(10deg, #ddd 85%, #5cdbd3 15%)
+}
+
+.p4 {
+    background-image: linear-gradient(150deg, transparent 50%, #5cdbd3 50%),
+        linear-gradient(90deg, #ddd 50%, #5cdbd3 40%);
+}
+
+.pie-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    /* цвет текста */
+    font-size: 1.2em;
+    /* размер шрифта */
+    z-index: 1;
+}
+
+.separator {
+    display: inline-block;
+    margin: 0 5px;
+    /* настройте отступы по вашему усмотрению */
+    font-size: 1.2em;
+    /* размер шрифта */
+    line-height: 8em;
+    /* выравнивание по высоте круга */
+    color: #000;
+    /* цвет двоеточия */
+}
+
+.main__circles {
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+    flex-wrap: wrap;
+}
+
+.timer {
+    display: inline-flex;
+    height: 70px;
+    padding: 0px 64px 0px 74px;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+    margin: 0;
+    top: 0;
+}
+
+.slider {
+    max-width: 1151px;
+    margin: 78px auto 0;
+}
+
+.slider__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    padding: 40px;
+    background: #F3F3F3;
+    max-width: 560px;
+    position: relative;
+    margin-right: 31px;
+}
+
+.card__presence {
+    width: 187px;
+    height: 42px;
+    background-color: #00CABF;
+    position: absolute;
+    color: #FFF;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    top: -23px;
+    right: 42px;
+}
+
+.card__presence-black {
+    color: #000;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.card__img-block {
+    background-color: white;
+    padding: 12px;
+    width: 480px;
+    margin: 0 auto;
+}
+
+.card__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__car-name {
+    color: #000;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30.6px;
+}
+
+.card__record {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 153px;
+}
+
+.card__svg {
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+}
+
+.card__recort-text {
+    color: #000;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.card__price {
+    color: #000;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.card__price_blue {
+    color: #00CABF;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card__img {
+    width: 467px;
+    height: 239px;
+    background-image: url(../assets/cards/background.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    margin-top: 13px;
+}
+
+.card__clider-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 26px;
+}
+
+.slider__circle {
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+.slider__circle:active {
+    box-shadow: 0px 0px 5px 2px #000, 0px 0px 0px 3px #FFF;
+}
+
+.c1 {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.c2 {
+    background-color: rgba(231, 231, 231, 1);
+}
+
+.c3 {
+    background-color: rgba(161, 161, 161, 1);
+}
+
+.c4 {
+    background-color: rgba(161, 58, 33, 1);
+}
+
+.bonus {
+    width: 480px;
+    margin: 0 auto;
+}
+
+.bonus__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bonus__block {
+    width: 224px;
+    display: flex;
+    align-items: center;
+    margin: 13px 0;
+}
+
+.bonus__block:first-child {
+    max-width: 160px;
+}
+
+.bonus__img {
+    width: 28px;
+    height: 28px;
+    margin-right: 12px;
+}
+
+.bonus__img:first-child {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.bonus__text {
+    color: #000;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.card__button {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: var(--white, #FFF);
+    font-size: 13.563px;
+    font-family: "Haval";
+    margin: 0 auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.card__button-cost {
+    background: #00CABF;
+}
+
+.card__button-credit {
+    background: #000;
+}
+
+.card__button-complete {
+    border: 1px solid #000;
+    color: #000;
+}
+
+@media (min-width: 1200px) {
+    
+}

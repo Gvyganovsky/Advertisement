@@ -2,39 +2,191 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=`, initial-scale=1.0">
     <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/zero.css">
     <link rel="stylesheet" type="text/css" href="./styles/style.css">
 </head>
 
 <body>
     <header class="header">
         <div class="header__body">
-            <div class="header__content">
-                <img src="./assets/logo.png" alt="logo" class="header__img">
-                <nav class="menu">
-                    <div class="hamburger-menu">
-                        <img src="./assets/burger.png" alt="menu" class="hamburger-menu__img">
+            <div class="header__info">
+                <div class="header__icons">
+                    <div class="header__logo-block">
+                        <p class="header__logo-text">Официальный дилер</p>
+                        <img src="./assets/header/logo.svg" alt="logo" class="header__logo-icon">
                     </div>
-                    <ul class="menu_link">
-                        <li><a href="#" class="header__text">FEATURES</a></li>
-                        <li><a href="#" class="header__text">SCREENSHOT</a></li>
-                        <li><a href="#" class="header__text">ABOUT</a></li>
-                        <li><a href="#" class="header__text">TEAM</a></li>
-                        <li><a href="#" class="header__text">PRICING</a></li>
-                        <li><a href="#" class="header__text">CONTACT</a></li>
-                    </ul>
-                </nav>
+                    <div class="strip"></div>
+                    <img src="./assets/header/header.svg" alt="" class="header__logo2">
+                </div>
+                <div class="header__block">
+                    <img src="./assets/header/phone.svg" alt="phone" class="header__phone-icon">
+                    <p class="header__phone-text">+7 (495) 755 99 90</p>
+                </div>
+                <div class="header__block">
+                    <img src="./assets/header/addr.svg" alt="address" class="header__address-icon">
+                    <div class="header__block-text">
+                        <p class="header__address">МО, г. Химки, Ленинградское ш., вл.14 стр.1</p>
+                        <p class="header__address-hours">Часы работы с 09:00 до 21:00</p>
+                    </div>
+                </div>
             </div>
+            <nav class="menu">
+                <ul class="menu__links">
+                    <li><a href="#" class="menu__link">M6</a></li>
+                    <li><a href="#" class="menu__link">DARGO X</a></li>
+                    <li><a href="#" class="menu__link">DARGO</a></li>
+                    <li><a href="#" class="menu__link">JOLION</a></li>
+                    <li><a href="#" class="menu__link">F7x</a></li>
+                    <li><a href="#" class="menu__link">F7</a></li>
+                    <li><a href="#" class="menu__link">H9</a></li>
+                    <li><a href="#" class="menu__link">GWM Poer</a></li>
+                    <li><a href="#" class="menu__link">GWM Poer KINGKONG</a></li>
+                </ul>
+                <ul class="menu__links">
+                    <li><a href="#" class="menu__link">ПОДОБРАТЬ КОМПЛЕКТАЦИЮ</a></li>
+                    <li><a href="#" class="menu__link">ТЕСТ-ДРАЙВ</a></li>
+                    <li><a href="#" class="menu__link">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <main></main>
-    <footer></footer>
-
-
-
-    <script src="./scripts/script"></script>
+    <main class="main">
+        <section class="main__header">
+            <h1 class="main__title">Увеличиваем выгоды на HAVAL</h1>
+            <p class="main__text">в Химках к Чёрной пятнице!</p>
+            <button class="main__button">Завиксировать условия</button>
+        </section>
+        <section class="main__timer-block">
+            <div class="main__timer-body">
+                <div class="main__timers">
+                    <p>Оставьте заявку и зафиксируйте условия</p>
+                    <div class="main__circles">
+                        <div class="pie p1">
+                            <div class="pie-content">8 дней</div>
+                        </div>
+                        <span class="separator">:</span>
+                        <div class="pie p2">
+                            <div class="pie-content">8 часов</div>
+                        </div>
+                        <span class="separator">:</span>
+                        <div class="pie p3">
+                            <div class="pie-content">56 минут</div>
+                        </div>
+                        <span class="separator">:</span>
+                        <div class="pie p4">
+                            <div class="pie-content">28 секунд</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="main__button timer">Зафиксировать условия</button>
+            </div>
+        </section>
+        <section class="slider">
+            <div class="slider__body">
+                <div class="card" id="card1">
+                    <div class="card__presence">В НАЛИЧИИ <span class="card__presence-black">21 автомобиль</span></div>
+                    <div class="card__content">
+                        <div class="card__img-block">
+                            <div class="card__header">
+                                <h3 class="card__car-name">HAVAL M6</h3>
+                                <div class="card__record">
+                                    <img src="./assets/cards/record.svg" alt="" class="card__svg">
+                                    <p class="card__recort-text">Записаться на тест-драйв</p>
+                                </div>
+                            </div>
+                            <p class="card__price">Выгода до <span class="card__price_blue">410 000 ₽</span></p>
+                            <img src="./assets/cards/1gray.png" alt="1gray" class="card__img" id="mainImage1">
+                        </div>
+                        <div class="card__clider-block">
+                            <div class="slider__circle c1" onclick="changeImage(1,'./assets/cards/1black.png')"></div>
+                            <div class="slider__circle c2" onclick="changeImage(1,'./assets/cards/1white.png')"></div>
+                            <div class="slider__circle c3" onclick="changeImage(1,'./assets/cards/1gray.png')"></div>
+                        </div>
+                        <div class="bonus">
+                            <div class="bonus__content">
+                                <div class="bonus__block">
+                                    <img src="./assets/cards/filter_1.svg" alt="filter_1" class="bonus__img">
+                                    <p class="bonus__text">Выгода по госпрограмме</p>
+                                </div>
+                                <div class="bonus__block">
+                                    <img src="./assets/cards/filter_2.svg" alt="filter_2" class="bonus__img">
+                                    <p class="bonus__text">Максимальные выгоды по трейд-ин</p>
+                                </div>
+                                <div class="bonus__block">
+                                    <img src="./assets/cards/filter_2.svg" alt="filter_2" class="bonus__img">
+                                    <p class="bonus__text">КАСКО в подарок</p>
+                                </div>
+                                <div class="bonus__block">
+                                    <img src="./assets/cards/filter_5.svg" alt="filter_5" class="bonus__img">
+                                    <p class="bonus__text">Зимние шины в подарок</p>
+                                </div>
+                                <div class="bonus__block">
+                                    <img src="./assets/cards/filter_3.svg" alt="filter_5" class="bonus__img">
+                                    <p class="bonus__text">Доп.оборудование на 100 000р в подарок</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="card__button card__button-cost">Узнать стоимость</button>
+                        <button class="card__button card__button-credit">Рассчитать кредит</button>
+                        <button class="card__button card__button-complete">Подобрать комплектацию</button>
+                    </div>
+                </div>
+                <div class="card" id="card2">
+                    <div class="card__presence">В НАЛИЧИИ</div>
+                    <div class="card__content">
+                        <div class="card__img-block">
+                            <div class="card__header">
+                                <h3 class="card__car-name">HAVAL M6</h3>
+                                <div class="card__record">
+                                    <img src="./assets/cards/record.svg" alt="" class="card__svg">
+                                    <p class="card__recort-text">Записаться на тест-драйв</p>
+                                </div>
+                            </div>
+                            <p class="card__price">Выгода до <span class="card__price_blue">320 000 ₽</span></p>
+                            <img src="./assets/cards/2red.png" alt="2red" class="card__img" id="mainImage2">
+                        </div>
+                        <div class="card__clider-block">
+                            <div class="slider__circle c3" onclick="changeImage(2,'./assets/cards/2gray.png')"></div>
+                            <div class="slider__circle c1" onclick="changeImage(2,'./assets/cards/2black.png')"></div>
+                            <div class="slider__circle c2" onclick="changeImage(2,'./assets/cards/2white.png')"></div>
+                            <div class="slider__circle c4" onclick="changeImage(2,'./assets/cards/2red.png')"></div>
+                        </div>
+                        <div class="bonus">
+                            <div class="bonus__content">
+                                <div class="bonus__block">
+                                    <img src="./assets/cards/filter_1.svg" alt="filter_1" class="bonus__img">
+                                    <p class="bonus__text">Выгода по госпрограмме</p>
+                                </div>
+                                <div class="bonus__block">
+                                    <img src="./assets/cards/filter_2.svg" alt="filter_2" class="bonus__img">
+                                    <p class="bonus__text">Максимальные выгоды по трейд-ин</p>
+                                </div>
+                                <div class="bonus__block">
+                                    <img src="./assets/cards/filter_2.svg" alt="filter_2" class="bonus__img">
+                                    <p class="bonus__text">КАСКО в подарок</p>
+                                </div>
+                                <div class="bonus__block">
+                                    <img src="./assets/cards/filter_5.svg" alt="filter_5" class="bonus__img">
+                                    <p class="bonus__text">Зимние шины в подарок</p>
+                                </div>
+                                <div class="bonus__block">
+                                    <img src="./assets/cards/filter_3.svg" alt="filter_5" class="bonus__img">
+                                    <p class="bonus__text">Доп.оборудование на 100 000р в подарок</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="card__button card__button-cost">Узнать стоимость</button>
+                        <button class="card__button card__button-credit">Рассчитать кредит</button>
+                        <button class="card__button card__button-complete">Подобрать комплектацию</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>
