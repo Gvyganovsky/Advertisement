@@ -88,51 +88,50 @@
             <div class="slider__body">
                 <div class="card" id="card1">
                     <div class="card__presence">В НАЛИЧИИ <span class="card__presence-black">21 автомобиль</span></div>
-                    <div class="card__content">
-                        <div class="card__img-block">
-                            <div class="card__header">
-                                <h3 class="card__car-name">HAVAL M6</h3>
-                                <div class="card__record">
-                                    <img src="./assets/cards/record.svg" alt="" class="card__svg">
-                                    <p class="card__recort-text">Записаться на тест-драйв</p>
-                                </div>
-                            </div>
-                            <p class="card__price">Выгода до <span class="card__price_blue">410 000 ₽</span></p>
-                            <img src="./assets/cards/1gray.png" alt="1gray" class="card__img" id="mainImage1">
-                        </div>
-                        <div class="card__clider-block">
-                            <div class="slider__circle c1" onclick="changeImage(1,'./assets/cards/1black.png')"></div>
-                            <div class="slider__circle c2" onclick="changeImage(1,'./assets/cards/1white.png')"></div>
-                            <div class="slider__circle c3" onclick="changeImage(1,'./assets/cards/1gray.png')"></div>
-                        </div>
-                        <div class="bonus">
-                            <div class="bonus__content">
-                                <div class="bonus__block">
-                                    <img src="./assets/cards/filter_1.svg" alt="filter_1" class="bonus__img">
-                                    <p class="bonus__text">Выгода по госпрограмме</p>
-                                </div>
-                                <div class="bonus__block">
-                                    <img src="./assets/cards/filter_2.svg" alt="filter_2" class="bonus__img">
-                                    <p class="bonus__text">Максимальные выгоды по трейд-ин</p>
-                                </div>
-                                <div class="bonus__block">
-                                    <img src="./assets/cards/filter_2.svg" alt="filter_2" class="bonus__img">
-                                    <p class="bonus__text">КАСКО в подарок</p>
-                                </div>
-                                <div class="bonus__block">
-                                    <img src="./assets/cards/filter_5.svg" alt="filter_5" class="bonus__img">
-                                    <p class="bonus__text">Зимние шины в подарок</p>
-                                </div>
-                                <div class="bonus__block">
-                                    <img src="./assets/cards/filter_3.svg" alt="filter_5" class="bonus__img">
-                                    <p class="bonus__text">Доп.оборудование на 100 000р в подарок</p>
-                                </div>
+                    <div class="card__img-block">
+                        <div class="card__header">
+                            <h3 class="card__car-name">HAVAL M6</h3>
+                            <div class="card__record">
+                                <img src="./assets/cards/record.svg" alt="" class="card__svg">
+                                <p class="card__recort-text">Записаться на тест-драйв</p>
                             </div>
                         </div>
-                        <button class="card__button card__button-cost">Узнать стоимость</button>
-                        <button class="card__button card__button-credit">Рассчитать кредит</button>
-                        <button class="card__button card__button-complete">Подобрать комплектацию</button>
+                        <p class="card__price">Выгода до <span class="card__price_blue">410 000 ₽</span></p>
+                        <img src="./assets/cards/1gray.png" alt="1gray" class="card__img" id="mainImage1">
                     </div>
+                    <div class="card__clider-block">
+                        <div class="slider__circle c1" onclick="changeImage(1,'./assets/cards/1black.png')"></div>
+                        <div class="slider__circle c2" onclick="changeImage(1,'./assets/cards/1white.png')"></div>
+                        <div class="slider__circle c3" onclick="changeImage(1,'./assets/cards/1gray.png')"></div>
+                    </div>
+                    <div class="bonus">
+                        <div class="bonus__content">
+                            <div class="bonus__block">
+                                <img src="./assets/cards/filter_1.svg" alt="filter_1" class="bonus__img">
+                                <p class="bonus__text">Выгода по госпрограмме</p>
+                            </div>
+                            <div class="bonus__block">
+                                <img src="./assets/cards/filter_2.svg" alt="filter_2" class="bonus__img">
+                                <p class="bonus__text">Максимальные выгоды по трейд-ин</p>
+                            </div>
+                            <div class="bonus__block">
+                                <img src="./assets/cards/filter_2.svg" alt="filter_2" class="bonus__img">
+                                <p class="bonus__text">КАСКО в подарок</p>
+                            </div>
+                            <div class="bonus__block">
+                                <img src="./assets/cards/filter_5.svg" alt="filter_5" class="bonus__img">
+                                <p class="bonus__text">Зимние шины в подарок</p>
+                            </div>
+                            <div class="bonus__block">
+                                <img src="./assets/cards/filter_3.svg" alt="filter_5" class="bonus__img">
+                                <p class="bonus__text">Доп.оборудование на 100 000р в подарок</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="card__button card__button-cost">Узнать стоимость</button>
+                    <button class="card__button card__button-credit">Рассчитать кредит</button>
+                    <button class="card__button card__button-complete">Подобрать комплектацию</button>
+
                 </div>
                 <div class="card" id="card2">
                     <div class="card__presence">В НАЛИЧИИ</div>
@@ -186,6 +185,17 @@
             </div>
         </section>
     </main>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="modal__title">Введите номер телефона</h2>
+            <form id="phoneForm">
+                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Введите номер телефона" required>
+                <br><br>
+                <button type="submit" class="card__button card__button-credit">Отправить</button>
+            </form>
+        </div>
+    </div>
     <script src="./scripts/script.js"></script>
 </body>
 
