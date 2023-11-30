@@ -23,6 +23,7 @@ body {
     align-items: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     padding: 14px 0;
+    flex-wrap: wrap;
 }
 
 .header__icons {
@@ -92,6 +93,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .menu__links {
@@ -112,11 +114,6 @@ body {
     text-decoration: none;
     color: #FFFFFF;
 }
-
-.menu__links:last-child .menu__link {
-    margin-right: 0;
-}
-
 
 .main {}
 
@@ -473,9 +470,10 @@ body {
     color: #000;
 }
 
- /* Стили для модального окна */
- .modal {
-    display: none; /* По умолчанию скрываем */
+/* Стили для модального окна */
+.modal {
+    display: none;
+    /* По умолчанию скрываем */
     position: fixed;
     z-index: 1;
     left: 0;
@@ -483,7 +481,8 @@ body {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5); /* Черный полупрозрачный фон */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Черный полупрозрачный фон */
 }
 
 .modal-content {
@@ -515,6 +514,71 @@ body {
     margin-bottom: 24px;
 }
 
-@media (min-width: 1200px) {
-    
+
+@media (max-width: 1134px) {
+    .menu {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 550px) {
+    .card {
+        padding: 2px;
+        margin: 6px;
+        margin-bottom: 96px;
+        width: 300px;
+    }
+
+    .bonus__content {
+        flex-wrap: wrap;
+        max-width: 300px;
+    }
+
+    .card__button  {
+        width: 260px;
+    }
+
+    .card__img {
+        max-width: 260px;
+    }
+
+    .card__img-block {
+        width: 280px;
+    }
+
+    .bonus {
+        width: 300px;
+    }
+
+    .menu {
+        max-width: 300px;
+        display: grid;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .menu__links {
+        display: grid;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 986px) {
+    .header__info {
+        justify-content: center;
+    }
+
+    .header__block,
+    .header__icons {
+        margin: 8px;
+    }
+}
+
+@media (max-width: 400px) {
+    .main__button {
+        width: 300px;
+    }
+
+    .main__title, .main__text {
+        font-size: 24px;
+    }
 }
